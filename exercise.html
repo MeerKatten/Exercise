@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Daily leg flexibility and strength routine for Karate.">
+    <title>Daily Leg Flexibility & Strength Routine</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: 'Roboto', Arial, sans-serif;
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+        }
+        .routine-item {
+            background: #1e1e1e;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .routine-name {
+            font-weight: bold;
+        }
+        .routine-reps {
+            font-style: italic;
+        }
+        .description {
+            display: none;
+            padding: 10px;
+            background: #292929;
+            border-left: 3px solid #ff9800;
+            margin-top: 5px;
+        }
+        a {
+            color: #ff9800;
+        }
+        iframe {
+            width: 560px;
+            height: 315px;
+        }
+    </style>
+    <script>
+        function toggleDescription(id) {
+            let desc = document.getElementById(id);
+            desc.style.display = (desc.style.display === "none" || desc.style.display === "") ? "block" : "none";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Daily Leg Flexibility & Strength Routine</h1>
+        <p>⏳ Total time: ~30-40 minutes</p>
+    </header>
+    <main>
+        <section>
+            <h2>1. Warm-up (5-7 min)</h2>
+            <div class="routine-item" onclick="toggleDescription('march-place')">
+                <span class="routine-name">March in place</span>
+                <span class="routine-reps">2 min</span>
+            </div>
+            <div class="description" id="march-place">March on the spot, lifting knees high. 
+                <iframe src="https://www.youtube.com/embed/ynbWNnrijkA" frameborder="0" allowfullscreen title="March in place"></iframe>
+            </div>
+
+            <div class="routine-item" onclick="toggleDescription('leg-swings-front')">
+                <span class="routine-name">Leg swings (front & back)</span>
+                <span class="routine-reps">30 sec per leg</span>
+            </div>
+            <div class="description" id="leg-swings-front">Swing one leg forward and backward while maintaining balance. 
+                <iframe src="https://www.youtube.com/embed/0XvKtEZ4i38" frameborder="0" allowfullscreen title="Leg swings (front & back)"></iframe>
+            </div>
+
+            <div class="routine-item" onclick="toggleDescription('leg-swings-side')">
+                <span class="routine-name">Leg swings (side to side)</span>
+                <span class="routine-reps">30 sec per leg</span>
+            </div>
+            <div class="description" id="leg-swings-side">Swing one leg side to side while maintaining balance. 
+                <iframe src="https://www.youtube.com/embed/64FhHrDsTeg" frameborder="0" allowfullscreen title="Leg swings (side to side)"></iframe>
+            </div>
+
+            <div class="routine-item" onclick="toggleDescription('hip-circles')">
+                <span class="routine-name">Hip circles</span>
+                <span class="routine-reps">30 sec per direction</span>
+            </div>
+            <div class="description" id="hip-circles">Rotate your hips in circles to loosen them up. 
+                <iframe src="https://www.youtube.com/embed/qkrJXGVj_OQ" frameborder="0" allowfullscreen title="Hip circles"></iframe>
+            </div>
+        </section>
+        <section>
+            <h2>2. Mobility Drills (5-8 min)</h2>
+            <div class="routine-item" onclick="toggleDescription('knee-wall')">
+                <span class="routine-name">Knee-to-wall ankle mobilization</span>
+                <span class="routine-reps">10 reps per leg</span>
+            </div>
+            <div class="description" id="knee-wall">Gently push knee forward towards the wall while keeping heel down. 
+                <iframe src="https://www.youtube.com/embed/YF7qaAbd0q8" frameborder="0" allowfullscreen title="Knee-to-wall ankle mobilization"></iframe>
+            </div>
+
+            <div class="routine-item" onclick="toggleDescription('90-90')">
+                <span class="routine-name">90/90 hip stretch</span>
+                <span class="routine-reps">30 sec per side</span>
+            </div>
+            <div class="description" id="90-90">Sit with one leg forward at 90 degrees and the other back at 90 degrees. Lean forward gently. 
+                <iframe src="https://www.youtube.com/embed/nWBKgtVjIjE" frameborder="0" allowfullscreen title="90/90 hip stretch"></iframe>
+            </div>
+
+            <div class="routine-item" onclick="toggleDescription('hip-flexor')">
+                <span class="routine-name">Hip flexor stretch</span>
+                <span class="routine-reps">30 sec per side</span>
+            </div>
+            <div class="description" id="hip-flexor">Kneel on one knee, push hips forward to stretch the hip flexor. 
+                <iframe src="https://www.youtube.com/embed/Hmec1bQBQOE" frameborder="0" allowfullscreen title="Hip flexor stretch"></iframe>
+            </div>
+
+            <div class="routine-item" onclick="toggleDescription('calf-stretch')">
+                <span class="routine-name">Calf stretch (against wall)</span>
+                <span class="routine-reps">30 sec per side</span>
+            </div>
+            <div class="description" id="calf-stretch">Place hands on wall, step one foot back and press heel down. 
+                <iframe src="https://www.youtube.com/embed/f1HzSAuB-Vw" frameborder="0" allowfullscreen title="Calf stretch (against wall)"></iframe>
+            </div>
+        </section>
+        <section>
+            <h2>3. Strength & Stability (10-15 min)</h2>
+            <div class="routine-item" onclick="toggleDescription('wall-squats')">
+                <span class="routine-name">Wall squats</span>
+                <span class="routine-reps">3 sets of 10 reps</span>
+            </div>
+            <div class="description" id="wall-squats">Stand with back against a wall, lower into squat, then return to standing. 
+                <iframe src="https://www.youtube.com/embed/hAvVXAE9Bgs" frameborder="0" allowfullscreen title="Wall squats"></iframe>
+            </div>
+
+            <div class="routine-item" onclick="toggleDescription('goblet-squats')">
+                <span class="routine-name">Goblet squats</span>
+                <span class="routine-reps">3 sets of 10 reps</span>
+            </div>
+            <div class="description" id="goblet-squats">Hold a weight close to your chest and perform deep squats. 
+                <iframe src="https://www.youtube.com/embed/45dZiT5tSD8" frameborder="0" allowfullscreen title="Goblet squats"></iframe>
+            </div>
+
+            <div class="routine-item" onclick="toggleDescription('chair-squats')">
+                <span class="routine-name">Chair-assisted squats</span>
+                <span class="routine-reps">3 sets of 12 reps</span>
+            </div>
+            <div class="description" id="chair-squats">Use a chair for support and squat slowly down and up. 
+                <iframe src="https://www.youtube.com/embed/gST_9kPV9q4" frameborder="0" allowfullscreen title="Chair-assisted squats"></iframe>
+            </div>
+
+            <div class="routine-item" onclick="toggleDescription('glute-bridges')">
+                <span class="routine-name">Glute bridges</span>
+                <span class="routine-reps">3 sets of 15 reps</span>
+            </div>
+            <div class="description" id="glute-bridges">Lie on back, lift hips towards ceiling, squeeze glutes. 
+                <iframe src="https://www.youtube.com/embed/Xp33YgPZgns" frameborder="0" allowfullscreen title="Glute bridges"></iframe>
+            </div>
+
+            <div class="routine-item" onclick="toggleDescription('clamshells')">
+                <span class="routine-name">Clamshells</span>
+                <span class="routine-reps">2 sets of 15 reps per side</span>
+            </div>
+            <div class="description" id="clamshells">Lie on side, open and close knees while keeping feet together. 
+                <iframe src="https://www.youtube.com/embed/DAAjOdwZdks" frameborder="0" allowfullscreen title="Clamshells"></iframe>
+            </div>
+
+            <div class="routine-item" onclick="toggleDescription('bird-dog')">
+                <span class="routine-name">Bird-dog</span>
+                <span class="routine-reps">2 sets of 10 reps per side</span>
+            </div>
+            <div class="description" id="bird-dog">On hands and knees, extend opposite arm and leg simultaneously. 
+                <iframe src="https://www.youtube.com/embed/QVRtIHp9h-M" frameborder="0" allowfullscreen title="Bird-dog"></iframe>
+            </div>
+
+            <div class="routine-item" onclick="toggleDescription('plank')">
+                <span class="routine-name">Plank</span>
+                <span class="routine-reps">2 sets of 30 sec</span>
+            </div>
+            <div class="description" id="plank">Hold a straight plank position on elbows. 
+                <iframe src="https://www.youtube.com/embed/pvIjsG5Svck" frameborder="0" allowfullscreen title="Plank"></iframe>
+            </div>
+        </section>
+        <section>
+            <h2>4. Flexibility & Cooldown (5-7 min)</h2>
+            <div class="routine-item" onclick="toggleDescription('ankle-dorsiflexion')">
+                <span class="routine-name">Ankle dorsiflexion stretch</span>
+                <span class="routine-reps">30 seconds</span>
+            </div>
+            <div class="description" id="ankle-dorsiflexion">Stretch the front of the ankle by sitting back on feet. 
+                <iframe src="https://www.youtube.com/embed/wLnYZRHLhnY?si=QxVTj0Bj_xNvQY2_&t=5" frameborder="0" allowfullscreen title="Ankle dorsiflexion stretch"></iframe>
+            </div>
+
+            <div class="routine-item" onclick="toggleDescription('hip-flexor-stretch')">
+                <span class="routine-name">Hip flexor stretch (again)</span>
+                <span class="routine-reps">30 sec per side</span>
+            </div>
+            <div class="description" id="hip-flexor-stretch">Kneel on one knee, push hips forward. 
+                <iframe src="https://www.youtube.com/embed/Hmec1bQBQOE" frameborder="0" allowfullscreen title="Hip flexor stretch (again)"></iframe>
+            </div>
+
+            <div class="routine-item" onclick="toggleDescription('seated-forward')">
+                <span class="routine-name">Seated forward fold</span>
+                <span class="routine-reps">30 sec</span>
+            </div>
+            <div class="description" id="seated-forward">Sit with legs extended, reach forward to stretch hamstrings. 
+                <iframe src="https://www.youtube.com/embed/QRIKGOUJILs" frameborder="0" allowfullscreen title="Seated forward fold"></iframe>
+            </div>
+
+            <div class="routine-item" onclick="toggleDescription('standing-hamstring')">
+                <span class="routine-name">Seated hamstring stretch</span>
+                <span class="routine-reps">30 sec per leg</span>
+            </div>
+            <div class="description" id="standing-hamstring">Sit with one leg extended straight and the other bent, then gently lean forward over your extended leg, keeping your back straight. 
+                <iframe src="https://www.youtube.com/embed/HFPbNaMzW3M" frameborder="0" allowfullscreen title="Seated hamstring stretch"></iframe>
+            </div>
+
+            <div class="routine-item" onclick="toggleDescription('butterfly-stretch')">
+                <span class="routine-name">Butterfly stretch</span>
+                <span class="routine-reps">30 sec per leg</span>
+            </div>
+            <div class="description" id="butterfly-stretch">To do this stretch, you will sit on the ground, putting the soles of your feet together. You can hold either at your ankles or at your feet. And then gently lean forward until you feel stretched to the inside of your thighs. Hold the stretch for 30 seconds. 
+                <iframe src="https://www.youtube.com/embed/v4OLkxi5-Q0" frameborder="0" allowfullscreen title="Butterfly stretch"></iframe>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
