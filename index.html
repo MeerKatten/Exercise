@@ -14,7 +14,7 @@
             font-family: 'Roboto', Arial, sans-serif;
             max-width: 600px;
             margin: auto;
-            padding: 20px;
+            padding: 10px;
         }
         .routine-item {
             background: #1e1e1e;
@@ -23,14 +23,17 @@
             border-radius: 5px;
             cursor: pointer;
             display: flex;
+            flex-direction: row;
             justify-content: space-between;
             align-items: center;
         }
-        .routine-name {
+        .routine-name, .routine-reps {
             font-weight: bold;
+            margin: 0;
         }
         .routine-reps {
             font-style: italic;
+            margin-left: 10px;
         }
         .description {
             display: none;
@@ -43,8 +46,37 @@
             color: #ff9800;
         }
         iframe {
-            width: 560px;
-            height: 315px;
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16 / 9;
+        }
+        @media (min-width: 600px) {
+            body {
+                padding: 20px;
+            }
+            .routine-item {
+                flex-direction: row;
+                align-items: center;
+            }
+            .routine-name, .routine-reps {
+                margin: 0;
+            }
+            iframe {
+                width: 560px;
+                height: 315px;
+            }
+        }
+        @media (max-width: 600px) {
+            .routine-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .routine-name, .routine-reps {
+                margin: 5px 0;
+            }
+            .routine-reps {
+                margin-left: 0;
+            }
         }
     </style>
     <script>
